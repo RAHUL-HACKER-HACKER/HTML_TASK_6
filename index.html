@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Task 6</title>
+    <style type="text/css">
+   div{
+     
+      width: 50%;
+      margin: 20px auto;
+      
+     
+   } 
+   label,option{
+    font-weight: bold;
+   } 
+   h1{
+    color: #5855f2;
+   }   
+#english,#spanish,#french,#german{
+    display: inline;
+
+}
+</style>
+</head>
+<body>
+    <div>
+    <h1>Registration Form</h1>
+    <form action="#" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="70" required></textarea><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="India" selected>India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select><br><br>
+        
+        <label>Languages Known:</label>
+        <input type="checkbox" id="english" name="languages[]" value="English">
+        <label for="english">English</label>
+        <input type="checkbox" id="spanish" name="languages[]" value="Spanish">
+        <label for="spanish">Spanish</label>
+        <input type="checkbox" id="french" name="languages[]" value="French">
+        <label for="french">French</label>
+        <input type="checkbox" id="german" name="languages[]" value="German">
+        <label for="german">German</label><br><br>
+
+        <input type="checkbox" id="informationTrue" name="informationTrue" value="true" checked>
+        <label for="informationTrue">Hereby I deciare all the given details are true</label><br><br>
+
+        <button type="submit">REGISTER</button>
+    </form>
+    </div>
+</body>
+</html>
